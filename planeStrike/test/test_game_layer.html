@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game-layer Test</title>
+    <script src="../lib/game.js"></script>
+</head>
+<body>
+<script>
+    GameLayerInit(400, 800);
+    function funcRandomOperation() {
+        var command = ["Up", "Down", "Left", "Right"];
+        var index = Math.round(Math.random() * 100) % 4;
+        index = 2;
+        UserCommand(command[index]);
+    }
+
+    function funcRequestData() {
+        var data = GetData();
+        console.log(data);
+    }
+
+    function IsOutOfEdge(elemPlaneCord) {
+        return false;
+    }
+
+    // 初始化，传入画布大小
+    setInterval("funcRequestData()", 1000);
+    setInterval("funcRandomOperation()", 1000); // 随机产生指令
+</script>
+</body>
+</html>

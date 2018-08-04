@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#main {
+    margin: 0 auto;
+    position: relative;
+}
+.album {
+    height: auto;
+    padding:15px 0 0 15px;
+    float: left;
+}
+.img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+.img img {
+    width: 300px;
+    height: auto;
+}

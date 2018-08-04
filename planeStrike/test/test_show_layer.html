@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show-layer Test</title>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../lib/output.js"></script>
+    <script src="../lib/input.js">
+        keydown(event);
+    </script>
+    <style>
+        .hide {
+            display:none;
+        }
+    </style>
+
+</head>
+
+<body>
+<canvas id="0" class="hide" width="400" height="800"></canvas>
+<canvas id="1" class="hide" width="400" height="800"></canvas>
+
+<script src="../lib/render.js"></script>
+<script type="javascript">
+
+
+    var index = 0;
+
+    function test() {
+        index = index % 2;
+        ShowFrame(index);
+        index++;
+    }
+
+    function init_canvas() {
+
+        var getCanvas0 = document.getElementById("0");
+        var drawCanvas0 = getCanvas0.getContext("2d");
+        drawCanvas0.fillStyle = "#FF6A6A";
+        drawCanvas0.fillRect(0,0,400,800);
+        var getCanvas1 = document.getElementById("1");
+        var drawCanvas1 = getCanvas1.getContext("2d");
+        drawCanvas1.fillRect(0,0,400,800);
+    }
+    init_canvas();
+
+    setInterval("test()", 50);
+
+    </script>
+</body>
+</html>
+
+ 
+  

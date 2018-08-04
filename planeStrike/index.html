@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plane Strike</title>
+    <script src="lib/engine.js"></script>
+    <script src="lib/game.js"></script>
+    <script src="lib/input.js"></script>
+    <script src="lib/render.js"></script>
+</head>
+<body>
+
+<canvas id="0" width=400 height=800></canvas>
+
+<script>
+    function GameStart(canvasID, width, height) {
+        function EverythingLoaded(obj) {
+            RegisterCanvas(canvasID, width, height);
+            EngineLayerInit();
+            GameLayerInit(width, height);
+            UserLayerInit(event);
+        }
+        MaterialLoad(EverythingLoaded);
+    }
+
+    GameStart(0, 400, 800);
+
+</script>
+
+</body>
+</html>

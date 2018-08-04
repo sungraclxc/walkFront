@@ -1,0 +1,613 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: #666;
+    font-size:12px;
+    line-height:18px;
+}
+dt {
+    font-weight: 700;
+    display: block;
+}
+dd {
+    display: block;
+    -webkit-margin-start: 40px;
+}
+dl {
+    display: block;
+}
+.none {
+    display: none;
+}
+.container {
+    width: 99.5%;
+}
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+    float: left;
+}
+/*广告区*/
+#adBox {
+    background: saddlebrown;
+    height: 80px;
+}
+#adBox a {
+    background-image: url("pic/Geralt_Yennefer-size_1920x1080.png");
+    display: block;
+    height: 100%;
+}
+.icon_cancel {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF;
+    background: rgb(45, 45, 45);
+    opacity: .3;
+    filter: alpha(opacity = 30);
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+/*横菜单*/
+#guestBox {
+    background-color: #999;
+    height:30px;
+    border:1px #666 solid;
+    line-height: 30px;
+    color: #666;
+}
+/*区域*/
+.areaMenu a {
+    color: #666;
+}
+.areaMenu {
+    width: 23%;
+    float: left;
+}
+#myArea {
+    position:relative;
+    left: 70%;
+}
+.nowArea {
+    width: 58px;
+}
+.nowArea .active {
+    background-color: lightgrey;
+}
+.areaList {
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #666;
+    position: absolute;
+    top: 30px;
+}
+.chooseArea {
+    width: 60px;
+    float: left;
+    padding: 2px 0;
+}
+.chooseArea a {
+    padding: 0 8px;
+    color: #666;
+}
+.choosed {
+    background-color: red;
+    color: white;
+}
+/*服务菜单*/
+.spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+    overflow: hidden;
+    margin: 11px 5px 0;
+}
+.serviceMenu a {
+    color: #666;
+}
+#register {
+    color: red;
+    margin-right: 8px;
+    z-index: 20;
+}
+.serviceMenu {
+    float: right;
+    width:70%;
+}
+.serviceMenu li{
+    float: left;
+}
+.guestBtn {
+    z-index: 21;
+    position: relative;
+}
+.data {
+    padding: 0 7px;
+}
+.line1 {
+    width: 116px;
+    float: left;
+}
+.guest_dropDown1 {
+    position: absolute;
+    width: 245px;
+    border: 1px solid #666;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    top: 30px;
+}
+.guest_dropDown2 {
+    background-color: white;
+    width:150px;
+    border:1px solid #666;
+    position:absolute;
+    left: -100px;
+    padding: 5px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    top: 30px;
+}
+.line2 {
+    width: 75px;
+    float: left;
+}
+.dropTitle {
+    width: 100%;
+    font-weight:bold;
+}
+.guest_dropDown3 {
+    width: 1084px;
+    background-color: white;
+    position: absolute;
+    border: 1px solid #666;
+    padding: 5px;
+    left: -880px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    top: 30px;
+    right:-84px;
+}
+.line3 {
+    width: 80px;
+    float: left;
+}
+.dropTitle1 {
+    font-weight: bold;
+}
+.lineMenu {
+    float: left;
+    border-right: 1px solid #999;
+    padding-left: 10px;
+}
+/*搜索栏*/
+/*logo*/
+#searchBox {
+    height: 140px;
+    background-color: lightgrey;
+}
+.logo {
+    display: block;
+    width: 190px;
+    height:170px;
+    background-image: url("pic/t013cc1fe83acc6c904.jpg");
+    position: absolute;
+    top: -31px;
+    box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+}
+/*search*/
+.search {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.searchForm {
+    width: 50%;
+    height: 35px;
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+    left: 270px;
+}
+.searchForm input {
+    left: 0;
+    padding: 4px 44px 4px 4px;
+    width: 80%;
+    height: 25px;
+    border: 1px solid transparent;
+    line-height: 25px;
+    font-size: 14px;
+    color: #989898;
+}
+.button {
+    border-radius: 0;
+    right: 10%;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    background-color: #f10215;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    outline: none;
+}
+.cart {
+    position: absolute;
+    right: 10%;
+    top: 25px;
+    z-index: 21;
+    width: 188px;
+    height: 33px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 33px;
+}
+.hotWords {
+    left: 270px;
+    width: 80%;
+    overflow: hidden;
+    position: absolute;
+    top: 65px;
+    height: 20px;
+    line-height: 20px;
+}
+.hotWords a {
+    color: #666
+}
+.nav {
+    overflow: hidden;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+}
+.nav li {
+    margin-left: 30px;
+}
+.nav a {
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+}
+.nav .spacer {
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -10px;
+    width: 1px;
+    height: 10px;
+    float: left;
+}
+#navAd {
+    position: absolute;
+    right:200px;
+    bottom: 10px;
+    width: 20%;
+    height: 40px;
+}
+#navAd a{
+    background-image: url("pic/20111121_15600634574657033191250.jpg");
+}
+/*主菜单*/
+#mainMenu {
+    background-color: lightgrey;
+    position: relative;
+}
+/*竖菜单*/
+.arrow_toR {
+    margin-left: 5px;
+}
+a:link {
+    cursor: pointer;
+    text-decoration: none;
+}
+.aToRed:visited {
+    color: black;
+}
+.aToRed:hover {
+    color: red;
+    cursor: pointer;
+}
+#menu_cl1 {
+    position: relative;
+    width: 190px;
+    height: 480px;
+}
+#menu_cl1 ul {
+    padding: 15px 0px 15px 0;
+    background: white;
+    border-width:0;
+    float: left;
+    left: 40px;
+    height: 450px;
+}
+#menu_cl1 li: hover {
+    background-color: #666;
+}
+#menu_cl1 li {
+    overflow: hidden;
+    display: block;
+    height: 28px;
+    line-height:28px;
+    padding-left: 14px;
+    position: relative;
+    width: 176px;
+
+}
+#menu_cl1 li.active {
+    background-color: #999;
+}
+.subMenu {
+    z-index: 30;
+    border: 1px solid #f7f7f7;
+    position: absolute;
+    width: 998px;
+    float: left;
+    left: 190px;
+    height: auto;
+    background-color: #f7f7f7;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding-bottom:10px;
+}
+.subMenu_part {
+    padding: 20px 0 10px;
+    width: auto;
+    height: auto;
+}
+.subMenu_col1 {
+    width: 800px;
+    height: auto;
+    float: left;
+}
+.subMenu_channel {
+    width: auto;
+    height: 24px;
+    padding-left: 20px;
+}
+.subChannel {
+    width: auto;
+    height: 24px;
+    padding: 0 10px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+}
+.subChannel:link   {
+    color: #fff;
+}
+.subChannel:hover   {
+    background-color: #666;
+}
+.detailItem_head {
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 70px;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: auto;
+    font-size: 12px;
+}
+.subMenu_detail {
+    color: black
+    height: auto
+    width: auto;
+    padding: 10px 0 0 20px;
+    overflow: hidden;
+}
+.detailItem_list {
+    margin-left: 5px;
+    border-top: solid 1px #eee;
+    margin-bottom: 5px;
+    position: relative;
+}
+.itemList_data {
+    float: left;
+    margin: 4px 0;
+    padding: 0 10px;
+    border-left:1px solid #e0e0e0;
+    line-height: 14px;
+    font-size: 12px;
+    height: auto;
+    left: 70px;
+    position: relative;
+}
+.subDetail_item {
+    overflow: hidden;
+    padding-top: 6px;
+    margin-top: 6px;
+    position: relative;
+}
+.subMenu_col2 {
+    width: 198px;
+    height: auto;
+    position: relative;
+    float: left;
+}
+.subMenu_brand {
+    width: 168px;
+    margin: auto;
+}
+.subBrandList {
+    width: 83px;
+    height: 35px;
+    display: inline-block;
+    float: left;
+    margin: 0 0 1px 1px;
+}
+.subBrandItem {
+    width: 85px;
+    height: 35px;
+}
+.subMenu_promotion {
+    width: 169px;
+    margin: 10px auto 0;
+}
+.subPromo {
+    display: inline-block;
+    margin-bottom: 1px;
+    height: 134px;
+    width: auto;
+    background-color: #e7e7e7;
+    margin-left:2px;
+}
+.subPromoList {
+    width: 168px;
+    height: 134px;
+}
+.menuCat {
+    color: black;
+}
+/*轮播广告*/
+#menu_cl2 {
+    z-index:0;
+    width: 50%;
+    height: 480px;
+    float: left;
+    left: 200px;
+    top: 0;
+    position: absolute;
+}
+.slider_list {
+    height: 480px;
+}
+.slider_prev {
+    left: 0;
+}
+.slider_control {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background-color: rgba(0,0,0,.2);
+    color: hsla(0,0%,100%,.4);
+    line-height: 40px;
+    text-align: center;
+}
+.slider_next {
+    right: 0;
+}
+.slider_wrapper {
+    opacity: 1;
+    width: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    transition: none;
+    height: 480px;
+}
+.slider_item {
+    width: 590px;
+    float: left;
+    position: relative;
+    left: 0;
+    height: 480px;
+    transition: opacity 500ms ease-in-out;
+    opacity: 0;
+    z-index: 10;
+    display: block;
+}
+.slider_item a{
+    background-image: url("pic/Geralt_Yennefer-size_1920x1080.png");
+    display: block;
+    height: 100%;
+}
+/*竖广告*/
+#menu_cl3 {
+    width: 17%;
+    height: 480px;
+    position:absolute;
+    top:0;
+    right:20%;
+}
+.lineAd {
+    width:95%;
+    margin: 0 auto;
+    height: 150px;
+    padding: 5px 2px;
+}
+#lineAd1 {
+    background-image: url("pic/p1.jpg");
+    display: block;
+    height: 100%;
+}
+#lineAd2 {
+    background-image: url("pic/p3.jpg");
+    display: block;
+    height: 100%;
+}
+#lineAd2 {
+    background-image: url("pic/p22.jpg");
+    display: block;
+    height: 100%;
+}
+#lineAd3 {
+    background-image: url("pic/p3.jpg");
+    display: block;
+    height: 100%;
+}
+/*竖个人信息*/
+#menu_cl4 {
+    width:20%;
+    background-color: red;
+    height: 480px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.selfInfo {
+    height: 150px;
+    position: relative;
+}
+.selfImage {
+    margin: 0 auto;
+    width:60px;
+    height: 60px;
+    background-image: url("pic/p50.jpg");
+    box-shadow: 0 -12px 10px rgba(0,0,0,.2);;
+}
+.selfInfo p{
+    text-align: center;
+}
+.selfInfo div {
+    margin: 0 auto;
+    width: 60px;
+}
+.selfInfo a{
+    color: #666;
+}
+#buttons {
+    padding-top: 20px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    height:20px;
+}
+.selfButton {
+    width: 70px;
+    height: 20px;
+}

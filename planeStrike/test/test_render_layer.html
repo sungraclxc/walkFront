@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Render-layer Test</title>
+</head>
+<body>
+  <canvas id="0" width=400 height=800></canvas>
+</body>
+<script src="../lib/render.js"></script>
+<script>
+    var jsonDataTest =
+        '{"canvas": "0",' +
+        '"canvasWidth" : "400",' +
+        '"canvasHeight" : "800",' +
+        '"PlaneHead" : [200, 650],' +
+        '"bullet" : [[200,600], [200, 450], [200, 50], [0, 0], [800, 800], [399, 400], [200, 200]]}';
+
+    Render(jsonDataTest);
+
+</script>
+</html>

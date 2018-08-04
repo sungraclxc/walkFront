@@ -1,0 +1,22 @@
+#main {
+    -webkit-column-width: 342px;
+    -moz-column-width: 342px;
+    -o-column-width:342px;
+    -ms-column-width: 342px;
+}
+
+.album {
+    padding: 10px 0 0 15px;
+}
+.img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    width: 300px;
+}
+.img img{
+    display: block;
+    width:300px;
+    height: auto;
+}

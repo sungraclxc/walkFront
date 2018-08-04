@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engine-layer Test</title>
+    <script src="../lib/engine.js"></script>
+</head>
+<body>
+<script>
+    function funcRandomKeyDown() {
+        var index = Math.round(Math.random() * 100) % 4;
+        var keyCode = 37 + index;
+        KeyInput(keyCode);
+
+    }
+
+    function GetData() {
+        var visualdata = {
+            "plane" : [200, 650],
+            "bullet" : [[200,600], [200, 450], [200, 50], [0, 0], [800, 800], [399, 400], [200, 200]]
+        };
+        var data = JSON.stringify(visualdata);
+        return data;
+
+    }
+
+    function UserCommand(cmd) {
+        //console.log(cmd);
+    }
+
+    function Render(data) {
+        console.log(data);
+    }
+
+    // Begin Test
+    EngineLayerInit();
+
+    setInterval("funcRandomKeyDown()", 1000); // 随机产生键盘按键事件
+</script>
+</body>
+</html>
