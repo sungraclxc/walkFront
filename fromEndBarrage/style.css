@@ -1,0 +1,96 @@
+#wrapper {
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+#main {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+#screen {
+    width: 100%;
+    height: 90%;
+    background-image: url("p3.jpg");
+}
+#barrageBoard {
+    width: 70%;
+    height: 90%;
+    background-color: rgba(00, 00, 00, 0.5);
+    position: absolute;
+    top: 0;
+}
+#inText {
+    width: 90%;
+    height:10%;
+}
+#inText input {
+    width: 70%;
+    height: 30px;
+    display: block;
+    top: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+/* button style */
+#inText button {
+    border: 0;
+    color: white;
+    background-color: #7bbfea;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    right: -85%;
+    top: -20px;
+    cursor: pointer;
+}
+/* barrage List Style */
+#barrageList {
+    margin-left: 10px;
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    z-index:10;
+}
+#barrageTitle {
+    width: 100%;
+    height: 5%;
+    background-color: lightgrey;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    color:grey;
+    margin:0;
+}
+#barrageContent {
+    width: 100%;
+    height: 94%;
+    margin-top: -10px;
+}
+#showUl {
+    width: 98%;
+    height: 100%;
+    margin-left: 1em;
+    padding-left:0;
+    margin-left: -1px;
+    overflow: hidden;
+}
+#showUl li {
+    list-style-position: inside;
+    list-style: none;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 4px;
+}
