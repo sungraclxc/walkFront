@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    width: 50%;
+    height: 50%;
+    background-color:black;
+    float: left;
+    border: 1px solid #281f1d;
+}
+.title {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    width: 100%;
+    line-height: 30px;
+    color: white;
+    padding-left: 10px;
+    border-bottom: 1px solid #281f1d;
+    font-weight: 800;
+}
+.contentBox {
+    width: 98%;
+    height: 90%;
+    color: green;
+}
+
+#result {
+    background: white;
+    color: black;
+}
+#resultTitle {
+    background-color: white;
+    color: black;
+}
+#runBtn {
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 24px;
+    background-color: #d3d7d4;
+}
+#resultWrapper {
+    background-color: white;
+    
+}
