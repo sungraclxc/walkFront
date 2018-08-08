@@ -3,13 +3,13 @@ self-used depository
 little new every day, little development in life.
 
 ## Done List 
-2017
+### 2017
 ---
 1. **PlaneStrike v1.0**    October   Hoping a subsequend complete.
 
-2018
+### 2018
 ---
-1. **Waterfall layout**         January   Learnd and done with mooc.com.
+1. **Waterfall layout**         ++January++   Learnd and done with mooc.com.
 2. **Two-level menu**           January   Originally was for imitating Jindong Hompage, but layout is the same, so exercised this widely used.
 3. **Shopping mall homepage**   July      Impovement version of the 2nd project.The basic frame is completed, need further perfectify.
 5. **fromEndBarrage**           August    Connect Mysql thru PHP, read&write data from database. 
