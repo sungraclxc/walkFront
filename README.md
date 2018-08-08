@@ -22,8 +22,8 @@ little new every day, little development in life.
 ## TO-DO List
 ### 2018
 #### week 8.5 - 8.12
-1.editorWeb
-2.ExerCSS/namecard
+1. editorWeb
+2. ExerCSS/namecard
 
 #### week 7.29 - 8.4
 1. ShoppingMall_home
