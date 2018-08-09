@@ -16,8 +16,8 @@ little new every day, little development in life.
    Further improvement: make clear the way to make the database works when it is in my github; Front page;
 6. **weatherHighchart**         August    The primary target is to learn how to use highchart.js, so the data is copied in a text from Aliyun service, and also use PHP to get it. 
    Further improvement: connect Aliyun Service.
-7. **editorWeb**                August    A page could run front code. HTML and JS is roughly finished, but need some reference for handling css code, will update later.
-   First uploaded in August 8,2018
+7. **editorWeb**                August    A page could run front code. HTML and JS is roughly finished, will update later, but cannot say the date;
+   First uploaded in August 8,2018; 1st update 08/09：simply realize the function after coding for handle css code, but many problem exist;
 
 ## TO-DO List
 ### 2018
