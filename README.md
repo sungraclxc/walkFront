@@ -24,6 +24,7 @@ little new every day, little development in life.
 #### week 8.5 - 8.12
 1. editorWeb
 2. ExerCSS/namecard
+3. ExerCSS/falling leaves
 
 #### week 7.29 - 8.4
 1. ShoppingMall_home
