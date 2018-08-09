@@ -114,45 +114,87 @@ var htmlCode = document.getElementById("htmlCode");
 var jsCode = document.getElementById("jsCode");
 var cssCode = document.getElementById("cssCode");
 
-var resultBox = document.getElementById("result");
+var resultBox = document.getElementById("resultBox");
 
 EventUtil.addHandler(runBtn, "mouseup", function (event) {
+  if (htmlCode !== "") {
     showHTML();
+  }
+  if (jsCode !== "") {
     runJS();
-    // runCSS();
+  }
+  if (cssCode !== "") {
+    runCSS();
+  }   
 })
 
 // html code
 function showHTML() {
-    var code = htmlCode.innerHTML;
-    var result = handleCode(code);
-    resultBox.innerHTML = "";
-    resultBox.innerHTML = result;
+  var code = htmlCode.innerHTML;
+  var result = handleCode(code);
+  resultBox.innerHTML = "";
+  resultBox.innerHTML = result;
 }
 
 function handleCode(argCode) {
-    var result = argCode.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/, "&");
-    return result;
+  var result = argCode.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/, "&").replace(/&nbsp;/g, "");
+  return result;
 }
 // javascript code
 function runJS() {
-    var code = jsCode.innerHTML;
-    code = handleCode(code);
-    var script = document.createElement('script');
-    script.type="text/javascript";
-    script.text=code;
-    document.getElementsByTagName('head')[0].appendChild(script);
-    document.head.removeChild(document.head.lastChild);
+  var code = jsCode.innerHTML;
+  code = handleCode(code);
+  var script = document.createElement('script');
+  script.type="text/javascript";
+  script.text=code;
+  document.getElementsByTagName('head')[0].appendChild(script);
+  var getScript = document.getElementsByTagName("script")[0];
+  document.head.removeChild(getScript);
 }
 //css code
 // building.....
 function runCSS() {
     var code = cssCode.innerHTML;
+    // handle code;
     code = handleCode(code);
-    var test = "h1 {color:red;}";
-    var style = document.createElement('style');
-    style.type = "text/style";
-    document.getElementsByTagName('head')[0].appendChild(style);
+    code = handleCssCode(code);
+    // control css code into that div;
+    console.log(code);
+    code = ctrCode(code);
+    console.log(code);
+    
+    // append into head;
+    var style = document.createElement("style");
+    style.type = "text/css";
+    style.appendChild(document.createTextNode(code));
+    var head = document.getElementsByTagName("head")[0];
+    head.appendChild(style);
     var getStyle = document.getElementsByTagName("style")[0];
-    //document.head.removeChild(document.head.lastChild);
+    //document.head.removeChild(getStyle);
+}
+
+function handleCssCode (argCode) {
+  var test = "h1 {<div>color: 'red';</div><div>}</div><div>h2 {</div><div>color: 'yellow';</div><div>}</div> ";
+  var result = argCode.replace(/\"/g, "\'").replace(/<(\/)?[0-9a-z]*>/igm, "").replace(/\s+/g, "");;
+  return result;
+}
+
+function ctrCode (argCode) {
+  typeArr = argCode.split("}");
+  console.log(typeArr);
+  for (var i =0; i<typeArr.length; i++) {
+    if (typeArr[i].indexOf("html") !==-1 || typeArr[i].indexOf("body") !==-1) {
+      console.log(typeof typeArr[i]);
+      typeArr[i] = typeArr[i].replace(/body/g, "#resultBox").replace("html", "#resultBox");
+      typeArr[i] = typeArr[i] + "!important }";
+      console.log(typeArr[i]);
+    } else if (typeArr[i] !== "") {
+      typeArr[i] = typeArr[i] + "!important }";
+      if (typeArr[i][0] !== "@") {
+        typeArr[i] = "#resultBox " + typeArr[i];
+      }
+    } 
+  }
+  typeArr = typeArr.join("");
+  return typeArr;
 }

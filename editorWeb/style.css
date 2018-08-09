@@ -47,5 +47,8 @@ html, body {
 }
 #resultWrapper {
     background-color: white;
-    
+}
+#resultBox {
+    width: 100%;
+    height: 100%;
 }
