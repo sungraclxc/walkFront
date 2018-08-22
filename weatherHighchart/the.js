@@ -42,11 +42,14 @@ function connetPHP() {
     }
     var phpTxt = JSON.parse(xhr.responseText);
     
-    return phpTxt;
+    var answernMsg = phpTxt["msg"];
+    var answerResult = phpTxt["result"];
+    return answerResult;
 }
 
 function getData() {
-    var data = connetPHP().result;
+    var data = connetPHP();
+    console.log(data);
     var city = data.city;
     var weekDays = data.daily;       // 接下来一周概要
     var theDay = data.hourly;        // 接下来24小时天气情况
@@ -64,7 +67,6 @@ function handleData(argHourData, argWeekData) {
     }
     showHours(hours, hourlyData);
     // handle the next week data
-    console.log(argWeekData);
     var weekDays = [];
     var dayshigh = [];
     var dayslow = [];
