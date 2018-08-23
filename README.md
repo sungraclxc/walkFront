@@ -14,9 +14,9 @@ little new every day, little development in life.
 3. **Shopping mall homepage**   July      Impovement version of the 2nd project.The basic frame is completed, need further perfectify.
 5. **fromEndBarrage**           August    Connect Mysql thru PHP, read&write data from database. 
    Further improvement: make clear the way to make the database works when it is in my github; Front page;
-6. **weatherHighchart**         August    The primary target is to learn how to use highchart.js, so the data is copied in a text from Aliyun service, and also use PHP to get it. 
+6. **weatherHighchart**         August    The primary target is to learn how to use highchart.js, so the data comes from Aliyun life-service API, but do not know how to search city right now, will update further.
    Further improvement: connect Aliyun Service.
-7. **editorWeb**                August    A page could run front code. HTML and JS is roughly finished, will update later, but cannot say the date;
+7. **editorWeb**                August    A page could run front code without 'iframe' label. HTML and JS is roughly finished, will update later, but cannot say the date;
    First uploaded in August 8,2018; 1st update 08/09：simply realize the function after coding for handle css code, but many problem exist;
 
 ## TO-DO List
