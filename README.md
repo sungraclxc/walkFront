@@ -21,6 +21,9 @@ little new every day, little development in life.
 
 ## TO-DO List
 ### 2018
+#### week 8.20 - 8.26
+1.ExerCss/Popup hearts
+
 #### week 8.5 - 8.12
 1. editorWeb
 2. ExerCSS/namecard
